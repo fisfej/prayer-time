@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEC1D10421DF541100B346D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D10321DF541100B346D0 /* AppDelegate.swift */; };
+		CEC1D10621DF541100B346D0 /* FFPrayerTimesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D10521DF541100B346D0 /* FFPrayerTimesController.swift */; };
+		CEC1D10921DF541100B346D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC1D10721DF541100B346D0 /* Main.storyboard */; };
+		CEC1D10B21DF541600B346D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC1D10A21DF541600B346D0 /* Assets.xcassets */; };
+		CEC1D10E21DF541600B346D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC1D10C21DF541600B346D0 /* LaunchScreen.storyboard */; };
+		CEC1D11921DF541700B346D0 /* Prayer_TimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D11821DF541700B346D0 /* Prayer_TimesTests.swift */; };
+		CEC1D12421DF541700B346D0 /* Prayer_TimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D12321DF541700B346D0 /* Prayer_TimesUITests.swift */; };
+		CEC1D16B21DF55F200B346D0 /* FFPrayerTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D16A21DF55F200B346D0 /* FFPrayerTimeCell.swift */; };
+		CEC1D1B721DFA5EC00B346D0 /* AdhanObjc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D19F21DFA5EA00B346D0 /* AdhanObjc.swift */; };
+		CEC1D1B821DFA5EC00B346D0 /* DateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1A121DFA5EA00B346D0 /* DateUtilities.swift */; };
+		CEC1D1B921DFA5EC00B346D0 /* MathUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1A221DFA5EA00B346D0 /* MathUtilities.swift */; };
+		CEC1D1BA21DFA5EC00B346D0 /* Qibla.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1A321DFA5EA00B346D0 /* Qibla.swift */; };
+		CEC1D1BB21DFA5EC00B346D0 /* SolarTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1A521DFA5EB00B346D0 /* SolarTime.swift */; };
+		CEC1D1BC21DFA5EC00B346D0 /* SolarCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1A621DFA5EB00B346D0 /* SolarCoordinates.swift */; };
+		CEC1D1BD21DFA5EC00B346D0 /* Astronomical.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1A721DFA5EB00B346D0 /* Astronomical.swift */; };
+		CEC1D1BE21DFA5EC00B346D0 /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1A821DFA5EB00B346D0 /* PrayerTimes.swift */; };
+		CEC1D1BF21DFA5EC00B346D0 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1AB21DFA5EC00B346D0 /* Angle.swift */; };
+		CEC1D1C021DFA5EC00B346D0 /* Minute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1AC21DFA5EC00B346D0 /* Minute.swift */; };
+		CEC1D1C121DFA5EC00B346D0 /* CalculationMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1AE21DFA5EC00B346D0 /* CalculationMethod.swift */; };
+		CEC1D1C221DFA5EC00B346D0 /* PrayerAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1AF21DFA5EC00B346D0 /* PrayerAdjustment.swift */; };
+		CEC1D1C321DFA5EC00B346D0 /* HighAltitudeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1B021DFA5EC00B346D0 /* HighAltitudeRule.swift */; };
+		CEC1D1C421DFA5EC00B346D0 /* Madhab.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1B121DFA5EC00B346D0 /* Madhab.swift */; };
+		CEC1D1C521DFA5EC00B346D0 /* Prayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1B221DFA5EC00B346D0 /* Prayer.swift */; };
+		CEC1D1C621DFA5EC00B346D0 /* CalculationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1B321DFA5EC00B346D0 /* CalculationParameters.swift */; };
+		CEC1D1C721DFA5EC00B346D0 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1B421DFA5EC00B346D0 /* Coordinates.swift */; };
+		CEC1D1C821DFA5EC00B346D0 /* SunnahTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1B521DFA5EC00B346D0 /* SunnahTimes.swift */; };
+		CEC1D1EA21DFA89C00B346D0 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1CB21DFA89900B346D0 /* FSCalendarConstants.m */; };
+		CEC1D1EB21DFA89C00B346D0 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1CE21DFA89900B346D0 /* FSCalendarCollectionView.m */; };
+		CEC1D1EC21DFA89C00B346D0 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1D021DFA89900B346D0 /* FSCalendarStickyHeader.m */; };
+		CEC1D1ED21DFA89C00B346D0 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1D121DFA89900B346D0 /* FSCalendarSeparatorDecorationView.m */; };
+		CEC1D1EE21DFA89C00B346D0 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1D221DFA89900B346D0 /* FSCalendarCell.m */; };
+		CEC1D1EF21DFA89C00B346D0 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1D621DFA89A00B346D0 /* FSCalendarDelegationProxy.m */; };
+		CEC1D1F021DFA89C00B346D0 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1D721DFA89A00B346D0 /* FSCalendarCalculator.m */; };
+		CEC1D1F121DFA89C00B346D0 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1D921DFA89A00B346D0 /* FSCalendarCollectionViewLayout.m */; };
+		CEC1D1F221DFA89C00B346D0 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1DB21DFA89A00B346D0 /* FSCalendar.m */; };
+		CEC1D1F321DFA89C00B346D0 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1DD21DFA89A00B346D0 /* FSCalendarExtensions.m */; };
+		CEC1D1F421DFA89C00B346D0 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1DE21DFA89B00B346D0 /* FSCalendarAppearance.m */; };
+		CEC1D1F521DFA89C00B346D0 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1E021DFA89B00B346D0 /* FSCalendarWeekdayView.m */; };
+		CEC1D1F621DFA89C00B346D0 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1E421DFA89B00B346D0 /* FSCalendarTransitionCoordinator.m */; };
+		CEC1D1F721DFA89C00B346D0 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1E721DFA89B00B346D0 /* FSCalendarDelegationFactory.m */; };
+		CEC1D1F821DFA89C00B346D0 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D1E921DFA89C00B346D0 /* FSCalendarHeaderView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEC1D11521DF541700B346D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC1D0F821DF541100B346D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC1D0FF21DF541100B346D0;
+			remoteInfo = "Prayer Times";
+		};
+		CEC1D12021DF541700B346D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC1D0F821DF541100B346D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC1D0FF21DF541100B346D0;
+			remoteInfo = "Prayer Times";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEC1D10021DF541100B346D0 /* Prayer Times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prayer Times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC1D10321DF541100B346D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEC1D10521DF541100B346D0 /* FFPrayerTimesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFPrayerTimesController.swift; sourceTree = "<group>"; };
+		CEC1D10821DF541100B346D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEC1D10A21DF541600B346D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEC1D10D21DF541600B346D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEC1D10F21DF541600B346D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC1D11421DF541700B346D0 /* Prayer TimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prayer TimesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC1D11821DF541700B346D0 /* Prayer_TimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer_TimesTests.swift; sourceTree = "<group>"; };
+		CEC1D11A21DF541700B346D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC1D11F21DF541700B346D0 /* Prayer TimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prayer TimesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC1D12321DF541700B346D0 /* Prayer_TimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer_TimesUITests.swift; sourceTree = "<group>"; };
+		CEC1D12521DF541700B346D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC1D16A21DF55F200B346D0 /* FFPrayerTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFPrayerTimeCell.swift; sourceTree = "<group>"; };
+		CEC1D16D21DF58A700B346D0 /* Prayer Times-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Prayer Times-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEC1D19F21DFA5EA00B346D0 /* AdhanObjc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdhanObjc.swift; sourceTree = "<group>"; };
+		CEC1D1A121DFA5EA00B346D0 /* DateUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtilities.swift; sourceTree = "<group>"; };
+		CEC1D1A221DFA5EA00B346D0 /* MathUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUtilities.swift; sourceTree = "<group>"; };
+		CEC1D1A321DFA5EA00B346D0 /* Qibla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Qibla.swift; sourceTree = "<group>"; };
+		CEC1D1A521DFA5EB00B346D0 /* SolarTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarTime.swift; sourceTree = "<group>"; };
+		CEC1D1A621DFA5EB00B346D0 /* SolarCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarCoordinates.swift; sourceTree = "<group>"; };
+		CEC1D1A721DFA5EB00B346D0 /* Astronomical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Astronomical.swift; sourceTree = "<group>"; };
+		CEC1D1A821DFA5EB00B346D0 /* PrayerTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerTimes.swift; sourceTree = "<group>"; };
+		CEC1D1A921DFA5EC00B346D0 /* Adhan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adhan.h; sourceTree = "<group>"; };
+		CEC1D1AB21DFA5EC00B346D0 /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
+		CEC1D1AC21DFA5EC00B346D0 /* Minute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minute.swift; sourceTree = "<group>"; };
+		CEC1D1AE21DFA5EC00B346D0 /* CalculationMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationMethod.swift; sourceTree = "<group>"; };
+		CEC1D1AF21DFA5EC00B346D0 /* PrayerAdjustment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerAdjustment.swift; sourceTree = "<group>"; };
+		CEC1D1B021DFA5EC00B346D0 /* HighAltitudeRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighAltitudeRule.swift; sourceTree = "<group>"; };
+		CEC1D1B121DFA5EC00B346D0 /* Madhab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Madhab.swift; sourceTree = "<group>"; };
+		CEC1D1B221DFA5EC00B346D0 /* Prayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prayer.swift; sourceTree = "<group>"; };
+		CEC1D1B321DFA5EC00B346D0 /* CalculationParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculationParameters.swift; sourceTree = "<group>"; };
+		CEC1D1B421DFA5EC00B346D0 /* Coordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		CEC1D1B521DFA5EC00B346D0 /* SunnahTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunnahTimes.swift; sourceTree = "<group>"; };
+		CEC1D1CB21DFA89900B346D0 /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		CEC1D1CC21DFA89900B346D0 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		CEC1D1CD21DFA89900B346D0 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		CEC1D1CE21DFA89900B346D0 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		CEC1D1CF21DFA89900B346D0 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		CEC1D1D021DFA89900B346D0 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		CEC1D1D121DFA89900B346D0 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
+		CEC1D1D221DFA89900B346D0 /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		CEC1D1D321DFA89900B346D0 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		CEC1D1D421DFA89A00B346D0 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		CEC1D1D521DFA89A00B346D0 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		CEC1D1D621DFA89A00B346D0 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		CEC1D1D721DFA89A00B346D0 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		CEC1D1D821DFA89A00B346D0 /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		CEC1D1D921DFA89A00B346D0 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		CEC1D1DA21DFA89A00B346D0 /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		CEC1D1DB21DFA89A00B346D0 /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		CEC1D1DC21DFA89A00B346D0 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		CEC1D1DD21DFA89A00B346D0 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		CEC1D1DE21DFA89B00B346D0 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		CEC1D1DF21DFA89B00B346D0 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		CEC1D1E021DFA89B00B346D0 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		CEC1D1E121DFA89B00B346D0 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		CEC1D1E221DFA89B00B346D0 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		CEC1D1E321DFA89B00B346D0 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
+		CEC1D1E421DFA89B00B346D0 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		CEC1D1E521DFA89B00B346D0 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		CEC1D1E621DFA89B00B346D0 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		CEC1D1E721DFA89B00B346D0 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		CEC1D1E821DFA89B00B346D0 /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		CEC1D1E921DFA89C00B346D0 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEC1D0FD21DF541100B346D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC1D11121DF541700B346D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC1D11C21DF541700B346D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEC1D0F721DF541100B346D0 = {
+			isa = PBXGroup;
+			children = (
+				CEC1D10221DF541100B346D0 /* Prayer Times */,
+				CEC1D11721DF541700B346D0 /* Prayer TimesTests */,
+				CEC1D12221DF541700B346D0 /* Prayer TimesUITests */,
+				CEC1D10121DF541100B346D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEC1D10121DF541100B346D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D10021DF541100B346D0 /* Prayer Times.app */,
+				CEC1D11421DF541700B346D0 /* Prayer TimesTests.xctest */,
+				CEC1D11F21DF541700B346D0 /* Prayer TimesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC1D10221DF541100B346D0 /* Prayer Times */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D16921DF55C500B346D0 /* Application */,
+				CEC1D16621DF55A800B346D0 /* View */,
+				CEC1D16521DF55A000B346D0 /* Controller */,
+				CEC1D16721DF55B100B346D0 /* Supporting Files */,
+				CEC1D16821DF55B900B346D0 /* Third Party */,
+			);
+			path = "Prayer Times";
+			sourceTree = "<group>";
+		};
+		CEC1D11721DF541700B346D0 /* Prayer TimesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D11821DF541700B346D0 /* Prayer_TimesTests.swift */,
+				CEC1D11A21DF541700B346D0 /* Info.plist */,
+			);
+			path = "Prayer TimesTests";
+			sourceTree = "<group>";
+		};
+		CEC1D12221DF541700B346D0 /* Prayer TimesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D12321DF541700B346D0 /* Prayer_TimesUITests.swift */,
+				CEC1D12521DF541700B346D0 /* Info.plist */,
+			);
+			path = "Prayer TimesUITests";
+			sourceTree = "<group>";
+		};
+		CEC1D16521DF55A000B346D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D10521DF541100B346D0 /* FFPrayerTimesController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEC1D16621DF55A800B346D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D16C21DF55FA00B346D0 /* Custom Cells */,
+				CEC1D10721DF541100B346D0 /* Main.storyboard */,
+				CEC1D10C21DF541600B346D0 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEC1D16721DF55B100B346D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D10A21DF541600B346D0 /* Assets.xcassets */,
+				CEC1D10F21DF541600B346D0 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEC1D16821DF55B900B346D0 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D1CA21DFA86B00B346D0 /* FSCalendar */,
+				CEC1D1C921DFA85A00B346D0 /* Prayer Time */,
+				CEC1D16D21DF58A700B346D0 /* Prayer Times-Bridging-Header.h */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		CEC1D16921DF55C500B346D0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D10321DF541100B346D0 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CEC1D16C21DF55FA00B346D0 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D16A21DF55F200B346D0 /* FFPrayerTimeCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		CEC1D1A021DFA5EA00B346D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D1A121DFA5EA00B346D0 /* DateUtilities.swift */,
+				CEC1D1A221DFA5EA00B346D0 /* MathUtilities.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEC1D1A421DFA5EB00B346D0 /* Astronomy */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D1A521DFA5EB00B346D0 /* SolarTime.swift */,
+				CEC1D1A621DFA5EB00B346D0 /* SolarCoordinates.swift */,
+				CEC1D1A721DFA5EB00B346D0 /* Astronomical.swift */,
+			);
+			path = Astronomy;
+			sourceTree = "<group>";
+		};
+		CEC1D1AA21DFA5EC00B346D0 /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D1AB21DFA5EC00B346D0 /* Angle.swift */,
+				CEC1D1AC21DFA5EC00B346D0 /* Minute.swift */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		CEC1D1AD21DFA5EC00B346D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D1AE21DFA5EC00B346D0 /* CalculationMethod.swift */,
+				CEC1D1AF21DFA5EC00B346D0 /* PrayerAdjustment.swift */,
+				CEC1D1B021DFA5EC00B346D0 /* HighAltitudeRule.swift */,
+				CEC1D1B121DFA5EC00B346D0 /* Madhab.swift */,
+				CEC1D1B221DFA5EC00B346D0 /* Prayer.swift */,
+				CEC1D1B321DFA5EC00B346D0 /* CalculationParameters.swift */,
+				CEC1D1B421DFA5EC00B346D0 /* Coordinates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEC1D1C921DFA85A00B346D0 /* Prayer Time */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D1A921DFA5EC00B346D0 /* Adhan.h */,
+				CEC1D19F21DFA5EA00B346D0 /* AdhanObjc.swift */,
+				CEC1D1A421DFA5EB00B346D0 /* Astronomy */,
+				CEC1D1A021DFA5EA00B346D0 /* Extensions */,
+				CEC1D1AD21DFA5EC00B346D0 /* Models */,
+				CEC1D1A821DFA5EB00B346D0 /* PrayerTimes.swift */,
+				CEC1D1A321DFA5EA00B346D0 /* Qibla.swift */,
+				CEC1D1B521DFA5EC00B346D0 /* SunnahTimes.swift */,
+				CEC1D1AA21DFA5EC00B346D0 /* Units */,
+			);
+			path = "Prayer Time";
+			sourceTree = "<group>";
+		};
+		CEC1D1CA21DFA86B00B346D0 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1D1E821DFA89B00B346D0 /* FSCalendar.h */,
+				CEC1D1DB21DFA89A00B346D0 /* FSCalendar.m */,
+				CEC1D1E121DFA89B00B346D0 /* FSCalendarAppearance.h */,
+				CEC1D1DE21DFA89B00B346D0 /* FSCalendarAppearance.m */,
+				CEC1D1CF21DFA89900B346D0 /* FSCalendarCalculator.h */,
+				CEC1D1D721DFA89A00B346D0 /* FSCalendarCalculator.m */,
+				CEC1D1D821DFA89A00B346D0 /* FSCalendarCell.h */,
+				CEC1D1D221DFA89900B346D0 /* FSCalendarCell.m */,
+				CEC1D1DF21DFA89B00B346D0 /* FSCalendarCollectionView.h */,
+				CEC1D1CE21DFA89900B346D0 /* FSCalendarCollectionView.m */,
+				CEC1D1DC21DFA89A00B346D0 /* FSCalendarCollectionViewLayout.h */,
+				CEC1D1D921DFA89A00B346D0 /* FSCalendarCollectionViewLayout.m */,
+				CEC1D1DA21DFA89A00B346D0 /* FSCalendarConstants.h */,
+				CEC1D1CB21DFA89900B346D0 /* FSCalendarConstants.m */,
+				CEC1D1E221DFA89B00B346D0 /* FSCalendarDelegationFactory.h */,
+				CEC1D1E721DFA89B00B346D0 /* FSCalendarDelegationFactory.m */,
+				CEC1D1E521DFA89B00B346D0 /* FSCalendarDelegationProxy.h */,
+				CEC1D1D621DFA89A00B346D0 /* FSCalendarDelegationProxy.m */,
+				CEC1D1D421DFA89A00B346D0 /* FSCalendarDynamicHeader.h */,
+				CEC1D1D321DFA89900B346D0 /* FSCalendarExtensions.h */,
+				CEC1D1DD21DFA89A00B346D0 /* FSCalendarExtensions.m */,
+				CEC1D1CC21DFA89900B346D0 /* FSCalendarHeaderView.h */,
+				CEC1D1E921DFA89C00B346D0 /* FSCalendarHeaderView.m */,
+				CEC1D1E321DFA89B00B346D0 /* FSCalendarSeparatorDecorationView.h */,
+				CEC1D1D121DFA89900B346D0 /* FSCalendarSeparatorDecorationView.m */,
+				CEC1D1E621DFA89B00B346D0 /* FSCalendarStickyHeader.h */,
+				CEC1D1D021DFA89900B346D0 /* FSCalendarStickyHeader.m */,
+				CEC1D1D521DFA89A00B346D0 /* FSCalendarTransitionCoordinator.h */,
+				CEC1D1E421DFA89B00B346D0 /* FSCalendarTransitionCoordinator.m */,
+				CEC1D1CD21DFA89900B346D0 /* FSCalendarWeekdayView.h */,
+				CEC1D1E021DFA89B00B346D0 /* FSCalendarWeekdayView.m */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEC1D0FF21DF541100B346D0 /* Prayer Times */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC1D12821DF541700B346D0 /* Build configuration list for PBXNativeTarget "Prayer Times" */;
+			buildPhases = (
+				CEC1D0FC21DF541100B346D0 /* Sources */,
+				CEC1D0FD21DF541100B346D0 /* Frameworks */,
+				CEC1D0FE21DF541100B346D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Prayer Times";
+			productName = "Prayer Times";
+			productReference = CEC1D10021DF541100B346D0 /* Prayer Times.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEC1D11321DF541700B346D0 /* Prayer TimesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC1D12B21DF541700B346D0 /* Build configuration list for PBXNativeTarget "Prayer TimesTests" */;
+			buildPhases = (
+				CEC1D11021DF541700B346D0 /* Sources */,
+				CEC1D11121DF541700B346D0 /* Frameworks */,
+				CEC1D11221DF541700B346D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEC1D11621DF541700B346D0 /* PBXTargetDependency */,
+			);
+			name = "Prayer TimesTests";
+			productName = "Prayer TimesTests";
+			productReference = CEC1D11421DF541700B346D0 /* Prayer TimesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEC1D11E21DF541700B346D0 /* Prayer TimesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC1D12E21DF541700B346D0 /* Build configuration list for PBXNativeTarget "Prayer TimesUITests" */;
+			buildPhases = (
+				CEC1D11B21DF541700B346D0 /* Sources */,
+				CEC1D11C21DF541700B346D0 /* Frameworks */,
+				CEC1D11D21DF541700B346D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEC1D12121DF541700B346D0 /* PBXTargetDependency */,
+			);
+			name = "Prayer TimesUITests";
+			productName = "Prayer TimesUITests";
+			productReference = CEC1D11F21DF541700B346D0 /* Prayer TimesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEC1D0F821DF541100B346D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Katrori;
+				TargetAttributes = {
+					CEC1D0FF21DF541100B346D0 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					CEC1D11321DF541700B346D0 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CEC1D0FF21DF541100B346D0;
+					};
+					CEC1D11E21DF541700B346D0 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CEC1D0FF21DF541100B346D0;
+					};
+				};
+			};
+			buildConfigurationList = CEC1D0FB21DF541100B346D0 /* Build configuration list for PBXProject "Prayer Times" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEC1D0F721DF541100B346D0;
+			productRefGroup = CEC1D10121DF541100B346D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEC1D0FF21DF541100B346D0 /* Prayer Times */,
+				CEC1D11321DF541700B346D0 /* Prayer TimesTests */,
+				CEC1D11E21DF541700B346D0 /* Prayer TimesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEC1D0FE21DF541100B346D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC1D10E21DF541600B346D0 /* LaunchScreen.storyboard in Resources */,
+				CEC1D10B21DF541600B346D0 /* Assets.xcassets in Resources */,
+				CEC1D10921DF541100B346D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC1D11221DF541700B346D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC1D11D21DF541700B346D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEC1D0FC21DF541100B346D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC1D1F121DFA89C00B346D0 /* FSCalendarCollectionViewLayout.m in Sources */,
+				CEC1D1BA21DFA5EC00B346D0 /* Qibla.swift in Sources */,
+				CEC1D1BF21DFA5EC00B346D0 /* Angle.swift in Sources */,
+				CEC1D1C221DFA5EC00B346D0 /* PrayerAdjustment.swift in Sources */,
+				CEC1D1B721DFA5EC00B346D0 /* AdhanObjc.swift in Sources */,
+				CEC1D1EB21DFA89C00B346D0 /* FSCalendarCollectionView.m in Sources */,
+				CEC1D1BC21DFA5EC00B346D0 /* SolarCoordinates.swift in Sources */,
+				CEC1D1F021DFA89C00B346D0 /* FSCalendarCalculator.m in Sources */,
+				CEC1D1F721DFA89C00B346D0 /* FSCalendarDelegationFactory.m in Sources */,
+				CEC1D1C321DFA5EC00B346D0 /* HighAltitudeRule.swift in Sources */,
+				CEC1D1C521DFA5EC00B346D0 /* Prayer.swift in Sources */,
+				CEC1D1BB21DFA5EC00B346D0 /* SolarTime.swift in Sources */,
+				CEC1D10621DF541100B346D0 /* FFPrayerTimesController.swift in Sources */,
+				CEC1D1F321DFA89C00B346D0 /* FSCalendarExtensions.m in Sources */,
+				CEC1D1BD21DFA5EC00B346D0 /* Astronomical.swift in Sources */,
+				CEC1D1C021DFA5EC00B346D0 /* Minute.swift in Sources */,
+				CEC1D1F821DFA89C00B346D0 /* FSCalendarHeaderView.m in Sources */,
+				CEC1D1F221DFA89C00B346D0 /* FSCalendar.m in Sources */,
+				CEC1D16B21DF55F200B346D0 /* FFPrayerTimeCell.swift in Sources */,
+				CEC1D1B821DFA5EC00B346D0 /* DateUtilities.swift in Sources */,
+				CEC1D1C621DFA5EC00B346D0 /* CalculationParameters.swift in Sources */,
+				CEC1D1EF21DFA89C00B346D0 /* FSCalendarDelegationProxy.m in Sources */,
+				CEC1D1F421DFA89C00B346D0 /* FSCalendarAppearance.m in Sources */,
+				CEC1D1EA21DFA89C00B346D0 /* FSCalendarConstants.m in Sources */,
+				CEC1D1ED21DFA89C00B346D0 /* FSCalendarSeparatorDecorationView.m in Sources */,
+				CEC1D1C121DFA5EC00B346D0 /* CalculationMethod.swift in Sources */,
+				CEC1D1F621DFA89C00B346D0 /* FSCalendarTransitionCoordinator.m in Sources */,
+				CEC1D1C421DFA5EC00B346D0 /* Madhab.swift in Sources */,
+				CEC1D1F521DFA89C00B346D0 /* FSCalendarWeekdayView.m in Sources */,
+				CEC1D1BE21DFA5EC00B346D0 /* PrayerTimes.swift in Sources */,
+				CEC1D1C821DFA5EC00B346D0 /* SunnahTimes.swift in Sources */,
+				CEC1D1B921DFA5EC00B346D0 /* MathUtilities.swift in Sources */,
+				CEC1D10421DF541100B346D0 /* AppDelegate.swift in Sources */,
+				CEC1D1EC21DFA89C00B346D0 /* FSCalendarStickyHeader.m in Sources */,
+				CEC1D1EE21DFA89C00B346D0 /* FSCalendarCell.m in Sources */,
+				CEC1D1C721DFA5EC00B346D0 /* Coordinates.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC1D11021DF541700B346D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC1D11921DF541700B346D0 /* Prayer_TimesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC1D11B21DF541700B346D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC1D12421DF541700B346D0 /* Prayer_TimesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEC1D11621DF541700B346D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC1D0FF21DF541100B346D0 /* Prayer Times */;
+			targetProxy = CEC1D11521DF541700B346D0 /* PBXContainerItemProxy */;
+		};
+		CEC1D12121DF541700B346D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC1D0FF21DF541100B346D0 /* Prayer Times */;
+			targetProxy = CEC1D12021DF541700B346D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEC1D10721DF541100B346D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC1D10821DF541100B346D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEC1D10C21DF541600B346D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC1D10D21DF541600B346D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEC1D12621DF541700B346D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEC1D12721DF541700B346D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEC1D12921DF541700B346D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FG622E5CL5;
+				INFOPLIST_FILE = "Prayer Times/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.katrori.www.prayertimes.fisfej.Prayer-Times";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Prayer Times/Third Party/Prayer Times-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEC1D12A21DF541700B346D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FG622E5CL5;
+				INFOPLIST_FILE = "Prayer Times/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.katrori.www.prayertimes.fisfej.Prayer-Times";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Prayer Times/Third Party/Prayer Times-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEC1D12C21DF541700B346D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FG622E5CL5;
+				INFOPLIST_FILE = "Prayer TimesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.katrori.www.prayertimes.fisfej.Prayer-TimesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prayer Times.app/Prayer Times";
+			};
+			name = Debug;
+		};
+		CEC1D12D21DF541700B346D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FG622E5CL5;
+				INFOPLIST_FILE = "Prayer TimesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.katrori.www.prayertimes.fisfej.Prayer-TimesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prayer Times.app/Prayer Times";
+			};
+			name = Release;
+		};
+		CEC1D12F21DF541700B346D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FG622E5CL5;
+				INFOPLIST_FILE = "Prayer TimesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.katrori.www.prayertimes.fisfej.Prayer-TimesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Prayer Times";
+			};
+			name = Debug;
+		};
+		CEC1D13021DF541700B346D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FG622E5CL5;
+				INFOPLIST_FILE = "Prayer TimesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.katrori.www.prayertimes.fisfej.Prayer-TimesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Prayer Times";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEC1D0FB21DF541100B346D0 /* Build configuration list for PBXProject "Prayer Times" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC1D12621DF541700B346D0 /* Debug */,
+				CEC1D12721DF541700B346D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC1D12821DF541700B346D0 /* Build configuration list for PBXNativeTarget "Prayer Times" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC1D12921DF541700B346D0 /* Debug */,
+				CEC1D12A21DF541700B346D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC1D12B21DF541700B346D0 /* Build configuration list for PBXNativeTarget "Prayer TimesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC1D12C21DF541700B346D0 /* Debug */,
+				CEC1D12D21DF541700B346D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC1D12E21DF541700B346D0 /* Build configuration list for PBXNativeTarget "Prayer TimesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC1D12F21DF541700B346D0 /* Debug */,
+				CEC1D13021DF541700B346D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEC1D0F821DF541100B346D0 /* Project object */;
+}
